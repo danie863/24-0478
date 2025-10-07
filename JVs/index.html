@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RoboMart - Modern robots for home, education, and industry." />
+  <title>RoboMart | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">RoboMart</a>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Robots</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Explore the future with premium robots</h1>
+          <p>From companion bots to industrial assistants, find the perfect robot for your needs.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="products.html">Shop Robots</a>
+            <a class="btn btn-outline" href="#highlights">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="companion-bot-1.jpg" alt="Robot image" />        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section">
+      <div class="container">
+        <h2 class="section-title">Why RoboMart?</h2>
+        <div class="features">
+          <div class="feature">
+            <div class="feature-icon">🤖</div>
+            <h3>Curated Selection</h3>
+            <p>Hand-picked robots tested for quality, safety, and reliability.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">⚡</div>
+            <h3>Cutting-edge Tech</h3>
+            <p>Latest sensors, AI features, and modular designs.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🛡️</div>
+            <h3>Warranty & Support</h3>
+            <p>Up to 24-month warranty and dedicated support team.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Best Sellers</h2>
+          <a class="link" href="products.html">View all</a>
+        </div>
+        <div class="product-grid">
+          <a class="product-card" href="product.html">
+            <img src="edu-rover-1.jpg" alt="Edu Rover E2" />            <div class="product-info">
+              <h3>Companion Bot C1</h3>
+              <p class="price">$899</p>
+            </div>
+          </a>
+          <a class="product-card" href="product.html">
+            <img src="inspection-drone.jpg" alt="Inspection Drone D4" />            <div class="product-info">
+              <h3>Edu Rover E2</h3>
+              <p class="price">$499</p>
+            </div>
+          </a>
+          <a class="product-card" href="product.html">
+            <img src="companion-bot-1.jpg" alt="Companion Bot" />            <div class="product-info">
+              <h3>Industrial Arm A5</h3>
+              <p class="price">$3,299</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> RoboMart. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="products.html">Robots</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
