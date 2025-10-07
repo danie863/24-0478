@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Robot details - RoboMart" />
+  <title>RoboMart | Product</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">RoboMart</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Robots</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="product-detail">
+        <div class="gallery">
+          <img src="assets/placeholder.svg" alt="Robot image" />
+        </div>
+        <div class="detail">
+          <h1>Companion Bot C1</h1>
+          <p class="price lg">$899</p>
+          <p class="desc">Friendly home assistant with voice interaction, obstacle avoidance, and smart-home integrations. Perfect for companionship, reminders, and simple tasks.</p>
+          <ul class="specs">
+            <li>Battery life: 10 hours</li>
+            <li>Connectivity: Wi‑Fi, Bluetooth</li>
+            <li>Sensors: LIDAR, depth camera, mic array</li>
+            <li>Warranty: 24 months</li>
+          </ul>
+          <div class="ctas">
+            <a class="btn btn-primary" href="#">Add to Cart</a>
+            <a class="btn btn-outline" href="products.html">Back to Robots</a>
+          </div>
+        </div>
+      </div>
+
+      <section class="section">
+        <h2 class="section-title">You might also like</h2>
+        <div class="product-grid">
+          <a class="product-card" href="product.html">
+            <img src="assets/placeholder.svg" alt="Edu Rover E2" />
+            <div class="product-info">
+              <h3>Edu Rover E2</h3>
+              <p class="price">$499</p>
+            </div>
+          </a>
+          <a class="product-card" href="product.html">
+            <img src="assets/placeholder.svg" alt="Inspection Drone D4" />
+            <div class="product-info">
+              <h3>Inspection Drone D4</h3>
+              <p class="price">$2,199</p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> RoboMart. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="products.html">Robots</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
