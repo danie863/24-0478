@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colorful Tables</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f8fc;
+        margin: 40px;
+    }
+
+    h1 {
+        color: black;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 45%;
+        margin: 20px;
+        float: left;
+        box-shadow: 0 0 5px #999;
+    }
+
+    th, td {
+        border: 1px solid #000;
+        text-align: center;
+        padding: 10px;
+    }
+
+    th {
+        background-color: #336699;
+        color: white;
+    }
+
+    /* Column color styling */
+    tr:nth-child(even) {
+        background-color: #b3e6ff;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #99ccff;
+    }
+
+    /* Optional: Column-specific coloring */
+    td:nth-child(1) { color: #ff6600; font-weight: bold; }
+    td:nth-child(2) { color: #000099; }
+    td:nth-child(3) { color: #ff3300; }
+    td:nth-child(4) { color: #006600; }
+    td:nth-child(5) { color: #660066; }
+</style>
+</head>
+<body>
+
+<h1>Table 1</h1>
+<table>
+    <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+        <th>Remark</th>
+    </tr>
+    <tr>
+        <td>Apples</td>
+        <td>KES 20</td>
+        <td>10</td>
+        <td>KES 200</td>
+        <td>Fresh</td>
+    </tr>
+    <tr>
+        <td>Oranges</td>
+        <td>KES 60</td>
+        <td>8</td>
+        <td>KES 480</td>
+        <td>Sweet</td>
+    </tr>
+    <tr>
+        <td>Bananas</td>
+        <td>KES 30</td>
+        <td>12</td>
+        <td>KES 360</td>
+        <td>Ripe</td>
+    </tr>
+    <tr>
+        <td>Mangoes</td>
+        <td>KES 50</td>
+        <td>5</td>
+        <td>KES 250</td>
+        <td>Juicy</td>
+    </tr>
+</table>
+
+<h1>Table 2</h1>
+<table>
+    <tr>
+        <th>Farm</th>
+        <th>Location</th>
+        <th>Contacts</th>
+        <th>Products</th>
+        <th>Remarks</th>
+    </tr>
+    <tr>
+        <td>Marks</td>
+        <td>Muranga</td>
+        <td>0723456789</td>
+        <td>Mangoes</td>
+        <td>Large Farm</td>
+    </tr>
+    <tr>
+        <td>James</td>
+        <td>Machakos</td>
+        <td>0721567654</td>
+        <td>Oranges</td>
+        <td>Medium</td>
+    </tr>
+    <tr>
+        <td>Marys</td>
+        <td>Kisii</td>
+        <td>0727123456</td>
+        <td>Avocado</td>
+        <td>Small</td>
+    </tr>
+    <tr>
+        <td>Peter</td>
+        <td>Nakuru</td>
+        <td>0721345678</td>
+        <td>Apples</td>
+        <td>Expanding</td>
+    </tr>
+</table>
+
+</body>
+</html>
