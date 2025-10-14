@@ -4,52 +4,50 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Colorful Tables</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f5f8fc;
-        margin: 40px;
-    }
+<style>/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #f8f8f8;
+}
 
-    h1 {
-        color: black;
-    }
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 30px;
+}
 
-    table {
-        border-collapse: collapse;
-        width: 45%;
-        margin: 20px;
-        float: left;
-        box-shadow: 0 0 5px #999;
-    }
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
 
-    th, td {
-        border: 1px solid #000;
-        text-align: center;
-        padding: 10px;
-    }
+th, td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+}
 
-    th {
-        background-color: #336699;
-        color: white;
-    }
+th {
+  color: orange;
+  font-weight: bold;
+}
 
-    /* Column color styling */
-    tr:nth-child(even) {
-        background-color: #b3e6ff;
-    }
+/* Table 1 color pattern */
+.table1 th:nth-child(1), .table1 td:nth-child(1) { background-color: #cce0ff; }
+.table1 th:nth-child(2), .table1 td:nth-child(2) { background-color: #99ccff; }
+.table1 th:nth-child(3), .table1 td:nth-child(3) { background-color: #66b2ff; }
+.table1 th:nth-child(4), .table1 td:nth-child(4) { background-color: #3399ff; }
+.table1 th:nth-child(5), .table1 td:nth-child(5) { background-color: #0080ff; color: #fff; }
 
-    tr:nth-child(odd) {
-        background-color: #99ccff;
-    }
-
-    /* Optional: Column-specific coloring */
-    td:nth-child(1) { color: #ff6600; font-weight: bold; }
-    td:nth-child(2) { color: #000099; }
-    td:nth-child(3) { color: #ff3300; }
-    td:nth-child(4) { color: #006600; }
-    td:nth-child(5) { color: #660066; }
-</style>
+/* Table 2 color pattern */
+.table2 th:nth-child(1), .table2 td:nth-child(1) { background-color: #d1e7dd; }
+.table2 th:nth-child(2), .table2 td:nth-child(2) { background-color: #a3cfbb; }
+.table2 th:nth-child(3), .table2 td:nth-child(3) { background-color: #74b49b; }
+.table2 th:nth-child(4), .table2 td:nth-child(4) { background-color: #479174; }
+.table2 th:nth-child(5), .table2 td:nth-child(5) { background-color: #2d6a4f; color: white; }
 </head>
 <body>
 
