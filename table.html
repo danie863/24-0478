@@ -3,130 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Colorful Tables</title>
-<style>/* General page styling */
-body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
-  background-color: #f8f8f8;
-}
+<title>Tables Assignment</title>
 
-h2 {
-  font-size: 28px;
-  font-weight: bold;
-  margin-top: 30px;
-}
-
-table {
-  border-collapse: collapse;
-  width: 70%;
-  margin-bottom: 30px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-th, td {
-  border: 1px solid #333;
-  padding: 10px;
-  text-align: center;
-}
-
-th {
-  color: orange;
-  font-weight: bold;
-}
-
-/* Table 1 color pattern */
-.table1 th:nth-child(1), .table1 td:nth-child(1) { background-color: #cce0ff; }
-.table1 th:nth-child(2), .table1 td:nth-child(2) { background-color: #99ccff; }
-.table1 th:nth-child(3), .table1 td:nth-child(3) { background-color: #66b2ff; }
-.table1 th:nth-child(4), .table1 td:nth-child(4) { background-color: #3399ff; }
-.table1 th:nth-child(5), .table1 td:nth-child(5) { background-color: #0080ff; color: #fff; }
-
-/* Table 2 color pattern */
-.table2 th:nth-child(1), .table2 td:nth-child(1) { background-color: #d1e7dd; }
-.table2 th:nth-child(2), .table2 td:nth-child(2) { background-color: #a3cfbb; }
-.table2 th:nth-child(3), .table2 td:nth-child(3) { background-color: #74b49b; }
-.table2 th:nth-child(4), .table2 td:nth-child(4) { background-color: #479174; }
-.table2 th:nth-child(5), .table2 td:nth-child(5) { background-color: #2d6a4f; color: white; }
+<!-- ✅ Link the external CSS file -->
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Table 1</h1>
-<table>
-    <tr>
-        <th>Product</th>
-        <th>Price</th>
-        <th>Quantity</th>
-        <th>Total</th>
-        <th>Remark</th>
-    </tr>
-    <tr>
-        <td>Apples</td>
-        <td>KES 20</td>
-        <td>10</td>
-        <td>KES 200</td>
-        <td>Fresh</td>
-    </tr>
-    <tr>
-        <td>Oranges</td>
-        <td>KES 60</td>
-        <td>8</td>
-        <td>KES 480</td>
-        <td>Sweet</td>
-    </tr>
-    <tr>
-        <td>Bananas</td>
-        <td>KES 30</td>
-        <td>12</td>
-        <td>KES 360</td>
-        <td>Ripe</td>
-    </tr>
-    <tr>
-        <td>Mangoes</td>
-        <td>KES 50</td>
-        <td>5</td>
-        <td>KES 250</td>
-        <td>Juicy</td>
-    </tr>
+<h2>Table 1</h2>
+<table class="table1">
+  <tr>
+    <th>Product</th>
+    <th>Price</th>
+    <th>Quantity</th>
+    <th>Total</th>
+    <th>Remarks</th>
+  </tr>
+  <tr>
+    <td>Pineapples</td>
+    <td>KES 50</td>
+    <td>6</td>
+    <td>KES 300</td>
+    <td>Sweet</td>
+  </tr>
+  <tr>
+    <td>Grapes</td>
+    <td>KES 90</td>
+    <td>5</td>
+    <td>KES 450</td>
+    <td>Imported</td>
+  </tr>
+  <tr>
+    <td>Watermelons</td>
+    <td>KES 120</td>
+    <td>3</td>
+    <td>KES 360</td>
+    <td>Fresh</td>
+  </tr>
 </table>
 
-<h1>Table 2</h1>
-<table>
-    <tr>
-        <th>Farm</th>
-        <th>Location</th>
-        <th>Contacts</th>
-        <th>Products</th>
-        <th>Remarks</th>
-    </tr>
-    <tr>
-        <td>Marks</td>
-        <td>Muranga</td>
-        <td>0723456789</td>
-        <td>Mangoes</td>
-        <td>Large Farm</td>
-    </tr>
-    <tr>
-        <td>James</td>
-        <td>Machakos</td>
-        <td>0721567654</td>
-        <td>Oranges</td>
-        <td>Medium</td>
-    </tr>
-    <tr>
-        <td>Marys</td>
-        <td>Kisii</td>
-        <td>0727123456</td>
-        <td>Avocado</td>
-        <td>Small</td>
-    </tr>
-    <tr>
-        <td>Peter</td>
-        <td>Nakuru</td>
-        <td>0721345678</td>
-        <td>Apples</td>
-        <td>Expanding</td>
-    </tr>
+<h2>Table 2</h2>
+<table class="table2">
+  <tr>
+    <th>Farm</th>
+    <th>Location</th>
+    <th>Contacts</th>
+    <th>Products</th>
+    <th>Remarks</th>
+  </tr>
+  <tr>
+    <td>Collins Farm</td>
+    <td>Embu</td>
+    <td>0712345678</td>
+    <td>Pineapples</td>
+    <td>In Season</td>
+  </tr>
+  <tr>
+    <td>Brenda Orchards</td>
+    <td>Naivasha</td>
+    <td>0722987654</td>
+    <td>Grapes</td>
+    <td>Imported Stock</td>
+  </tr>
+  <tr>
+    <td>Kevin Produce</td>
+    <td>Kitale</td>
+    <td>0733123456</td>
+    <td>Watermelons</td>
+    <td>Ready for Sale</td>
+  </tr>
 </table>
 
 </body>
